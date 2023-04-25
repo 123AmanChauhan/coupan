@@ -1,0 +1,61 @@
+*{margin: 0; box-sizing: border-box;}
+body{background-color: rgb(74, 212, 247); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+/* .dot{border: 1px solid red;} */
+.card {
+    width: 400px;
+    /* height: 180px; */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 20px 20px;
+    position: relative;
+    margin: 5% auto;
+  }
+  
+  .main,
+  .copy-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    margin: auto;
+  }
+  .card::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+    right: -20px;
+    border-radius: 40px;
+    z-index: 1;
+    top: 200px;
+    background-color: rgb(74, 212, 247);
+    width: 40px;
+  }
+  
+  .card::before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    left: -20px;
+    border-radius: 40px;
+    z-index: 1;
+    top: 200px;
+    background-color: rgb(74, 212, 247);
+    width: 40px;
+  }
+
+.main img{height: 50px; margin: auto;}
+
+.card .p1{margin-top: 20px; color: rgb(66, 64, 64);}
+.card form{padding: 20px 10px 20px 10px;}
+.card form button{margin-top: 15px; cursor: pointer; padding: 5px 25px 5px 25px; background: rgb(74, 212, 247); border: none; font-size: 16px;}
+.card form h2{font-size: 18px; margin-bottom: 10px; border-bottom: 2px dotted rgb(66, 64, 64);}
+.wrap1 .card .flex{display: flex; justify-content: space-between; margin-top: 2px;padding: 10px;}
+.wrap1 .card .flex .p2{color: rgb(66, 64, 64); margin: auto;}
+.wrap1 .card .flex .p2 span{font-weight: bold; text-decoration: underline;}
+.wrap1 .card .flex button{cursor: pointer; padding: 5px 25px 5px 25px; background-color: rgb(74, 212, 247); border: none; font-size: 16px;}
+
+@media screen and (max-width:400px) {
+    .card{width: 100%; margin: 40% auto auto 5%;}
+}
